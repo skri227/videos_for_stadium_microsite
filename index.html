@@ -4,6 +4,7 @@
 
 <title>Videos For A Stadium</title>
 
+<script src="slideshow.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link href="css/style.css" rel="stylesheet">
 
@@ -37,7 +38,17 @@
     </div>
     <!--Slideshow and Social Media-->
     <div class="col-sm-8">
-      <div>SLIDESHOW</div>
+      <div>
+        <img class="mySlides" src="images/img_1.jpg">
+        <img class="mySlides" src="images/img_2.jpg" display="none">
+        <img class="mySlides" src="images/img_3.jpg" display="none">
+        <div class="center display bottommiddle" style="width:100%">
+        <div class="left_btn" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="right_btn" onclick="plusDivs(1)">&#10095;</div>
+        <span class="badge demo w3-border" onclick="currentDiv(1)"></span>
+        <span class="badge demo w3-border" onclick="currentDiv(2)"></span>
+        <span class="badge demo w3-border" onclick="currentDiv(3)"></span>
+      </div>
       <div>SOCIAL MEDIA</div>
     </div>
   </div>
@@ -45,7 +56,7 @@
 
 <!--Final Paragraphs and Sponsors-->
 <div>
-  <p>This unique “art meets sports”event explores competition, skill, endurance, teamwork, and body movement. The national anthem, the green grass of various fields, and sports language are also examined. The videos will be presented on the stadium’s high resolution screen and viewed from field level seats in the end zone.</p>
+  <p>This unique “art meets sports” event explores competition, skill, endurance, teamwork, and body movement. The national anthem, the green grass of various fields, and sports language are also examined. The videos will be presented on the stadium’s high resolution screen and viewed from field level seats in the end zone.</p>
   <p>Carl Nathe, the public address announcer at UK Football games, will introduce each artist’s work and provide commentary. Concession food and drinks that are normally available during games will be offered for purchase before and after the screening.</p>
   <p>Videos for a Stadium is organized by Stuart Horodner, director of the UK Art Museum.  In speaking about the motivation for this event, Horodner states, “UK and Lexington take pride in their teams and fans and the sports-centric culture that exists here. I’m interested in how the arts can intersect with these conditions and contexts, and how our Museum can engage audiences in surprising and memorable ways. This is a great opportunity to present videos that are usually shown at prestigious galleries, museums, and fairs, and to see what happens when art fans and sports fans come together.”</p>
   <h4>Sponsored by Creative Lexington and Moontower Music Festival</h4>
