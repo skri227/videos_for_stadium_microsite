@@ -4,7 +4,6 @@
 
 <title>Videos For A Stadium</title>
 
-<script src="slideshow.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link href="css/style.css" rel="stylesheet">
 
@@ -29,8 +28,8 @@
       <p>Thursday, April 6, 7-9 PM</p>
       <h4>Location: </h4>
       <p>Commonwealth Stadium</p>
-      <h4>Parking Location: </h4>
-      <p>Free Parking is available in the Green Lot behind the stadium.</p>
+      <a style="color:white;text-decoration:underline; font-weight:800;" href="http://ukgamedayparking.io-media.com"/><h4>Parking Location: </h4>
+      <p>Free Parking is available in the Green Lot behind the stadium.</p></a>
       <h4>Tickets: </h4>
       <p>$15 - General Public</p>
       <p>$10 - Museum Members</p>
@@ -38,17 +37,89 @@
     </div>
     <!--Slideshow and Social Media-->
     <div class="col-sm-8">
-      <div>
-        <img class="mySlides" src="images/img_1.jpg">
-        <img class="mySlides" src="images/img_2.jpg" >
-        <img class="mySlides" src="images/img_3.jpg">
-        <div class="center display bottommiddle" style="width:100%">
-        <div class="left_btn" onclick="plusDivs(-1)">&#10094;</div>
-        <div class="right_btn" onclick="plusDivs(1)">&#10095;</div>
-        <span class="badge demo w3-border" onclick="currentDiv(1)"></span>
-        <span class="badge demo w3-border" onclick="currentDiv(2)"></span>
-        <span class="badge demo w3-border" onclick="currentDiv(3)"></span>
+      <!--The following section of code was exported from http://www.jssor.com/demos/simple-fade-slideshow.slider-->
+      <!--Alterations were made to the code to get the images in their correct format-->
+      <div class="SlideShow">
+        <script src="js/jssor.slider-22.2.16.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            jssor_1_slider_init = function() {
+
+                var jssor_1_SlideshowTransitions = [
+                  {$Duration:1200,$Opacity:2}
+                ];
+
+                var jssor_1_options = {
+                  $AutoPlay: true,
+                  $SlideshowOptions: {
+                    $Class: $JssorSlideshowRunner$,
+                    $Transitions: jssor_1_SlideshowTransitions,
+                    $TransitionsOrder: 1
+                  },
+                  $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$
+                  },
+                  $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$
+                  }
+                };
+
+                var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+                /*responsive code begin*/
+                /*remove responsive code if you don't want the slider scales while window resizing*/
+               function ScaleSlider() {
+                    var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                    if (refSize) {
+                        refSize = Math.min(refSize, 600);
+                        jssor_1_slider.$ScaleWidth(refSize);
+                    }
+                    else {
+                        window.setTimeout(ScaleSlider, 20);
+                    }
+                }
+                ScaleSlider();
+                $Jssor$.$AddEvent(window, "load", ScaleSlider);
+                $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+                $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+                /*responsive code end*/
+            };
+        </script>
+        <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:600px;height:300px;overflow:hidden;visibility:hidden;">
+            <!-- Loading Screen -->
+            <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
+                <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+            </div>
+            <div data-u="slides" class="slides">
+              <div>
+                  <img data-u="image" src="images/aerialview.jpeg" />
+              </div>
+                <div>
+                    <img data-u="image" src="images/commonwealth.jpeg" />
+                </div>
+                <div>
+                    <img data-u="image" src="images/exterior.jpeg" />
+                </div>
+                <div>
+                    <img data-u="image" src="images/fullscreens.jpeg" />
+                </div>
+                <div>
+                    <img data-u="image" src="images/stadium.jpeg" />
+                </div>
+            </div>
+            <!-- Bullet Navigator -->
+            <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+                <!-- bullet navigator item prototype -->
+                <div data-u="prototype" style="width:16px;height:16px;"></div>
+            </div>
+            <!-- Arrow Navigator -->
+            <span data-u="arrowleft" class="jssora12l" style="top:0px;left:10px;width:30px;height:46px;" data-autocenter="2"></span>
+            <span data-u="arrowright" class="jssora12r" style="top:0px;right:10px;width:30px;height:46px;" data-autocenter="2"></span>
+        </div>
+        <script type="text/javascript">jssor_1_slider_init();</script>
       </div>
+      <!--End of Javascript Slideshow-->
+
       <div style="text-align:center">
         <a href="https://www.facebook.com/ukartmuseum/"><img class="SocialMedia" src="images/fb_logo.png"></a>
         <a href="https://www.instagram.com/ukartmuseum/"><img class="SocialMedia" src="images/instagram_logo.png"></a>
