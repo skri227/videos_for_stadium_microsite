@@ -10,20 +10,18 @@
 
 </head>
 
-<body>
+<body style="background:#2f326a; color:white">
 
 <!--Title and 1st paragraph-->
-<div>
-  <h1>Videos For A Stadium</h1>
-
-    <h2> Hello, Anastsia </h2> 
+<div class="containter-fluid banner">
+  <h1> Videos For A Stadium </h1>
+</div>
+<div class="container top-caption">
   <p>The UK Art Museum is pleased to announce Videos for the Stadium, a presentation of sports-related videos by a range of nationally known artists including:  Paul S. Benjamin, Janet Biggs, Victoria Fu, Brett Kashmere, Anya Liftig, Lilly McElroy, Didier Morelli, Michael David Murphy, Alix Pearlstein, Joe Sola, and Scott Stark.</p>
-
-
 </div>
 
 <!--Slideshow,Social Media, and Important Information-->
-<div>
+<div class="container info">
   <div class="row">
     <!--Important Information-->
     <div class="col-sm-4">
@@ -36,15 +34,14 @@
       <h4>Tickets: </h4>
       <p>$15 - General Public</p>
       <p>$10 - Museum Members</p>
-      <button>Buy Tickets</button>
       <a href="http://finearts.uky.edu/art-museum." class="btn btn-default">Go To Tickets</a>
     </div>
     <!--Slideshow and Social Media-->
     <div class="col-sm-8">
       <div>
         <img class="mySlides" src="images/img_1.jpg">
-        <img class="mySlides" src="images/img_2.jpg" display="none">
-        <img class="mySlides" src="images/img_3.jpg" display="none">
+        <img class="mySlides" src="images/img_2.jpg" >
+        <img class="mySlides" src="images/img_3.jpg">
         <div class="center display bottommiddle" style="width:100%">
         <div class="left_btn" onclick="plusDivs(-1)">&#10094;</div>
         <div class="right_btn" onclick="plusDivs(1)">&#10095;</div>
@@ -52,17 +49,27 @@
         <span class="badge demo w3-border" onclick="currentDiv(2)"></span>
         <span class="badge demo w3-border" onclick="currentDiv(3)"></span>
       </div>
-      <div>SOCIAL MEDIA</div>
+      <div style="text-align:center">
+        <a href="https://www.facebook.com/ukartmuseum/"><img class="SocialMedia" src="images/fb_logo.png"></a>
+        <a href="https://www.instagram.com/ukartmuseum/"><img class="SocialMedia" src="images/instagram_logo.png"></a>
+        <a href="https://www.pinterest.com/artmuseumatuk/"><img class="SocialMedia" src="images/pinterest_logo.png"></a>
+        <a href="https://twitter.com/ArtMuseumatUK"><img class="SocialMedia" src="images/twitter_logo.png"></a>
+      </div>
     </div>
   </div>
 </div>
 
 <!--Final Paragraphs and Sponsors-->
-<div>
+<div class="container bottom-info">
   <p>This unique “art meets sports” event explores competition, skill, endurance, teamwork, and body movement. The national anthem, the green grass of various fields, and sports language are also examined. The videos will be presented on the stadium’s high resolution screen and viewed from field level seats in the end zone.</p>
   <p>Carl Nathe, the public address announcer at UK Football games, will introduce each artist’s work and provide commentary. Concession food and drinks that are normally available during games will be offered for purchase before and after the screening.</p>
   <p>Videos for a Stadium is organized by Stuart Horodner, director of the UK Art Museum.  In speaking about the motivation for this event, Horodner states, “UK and Lexington take pride in their teams and fans and the sports-centric culture that exists here. I’m interested in how the arts can intersect with these conditions and contexts, and how our Museum can engage audiences in surprising and memorable ways. This is a great opportunity to present videos that are usually shown at prestigious galleries, museums, and fairs, and to see what happens when art fans and sports fans come together.”</p>
   <h4>Sponsored by Creative Lexington and Moontower Music Festival</h4>
+</div>
+
+<div class="container sponsor-logos">
+  <img src="images/creativelexington.png" height="100" width="100"/>
+  <img src="images/moontowermusicfest.png"height="100" width="250"/>
 </div>
 
 </body>

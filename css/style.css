@@ -1,12 +1,98 @@
 h1 {
   text-align: center;
-  font-family: 'collegiateoutline';
+  font-family: 'freshman';
   font-size: 50px;
+  border-style: none;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 60px;
+  padding-left: 15px;
 }
+
 @font-face{
-  font-family: 'collegiateoutline';
-  src: url('../fonts/collegiateoutline.ttf');
+  font-family: 'freshman';
+  src: url('../fonts/freshman.ttf');
 }
+
 .button:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+body {
+    margin-left: 1.2cm;
+    margin-right: 1.2cm;
+    border-style: none;
+    padding-top: 50px;
+    padding-right: 60px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+}
+
+div {
+    padding: 10px;
+}
+
+.SocialMedia{
+    max-width: 1.1in;
+    max-height: 1.1in;
+    min-width: .25in;
+    min-height: .25in;
+    border-style: none;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.banner {
+  text-align: center;
+  font-family: 'freshman';
+  color: white;
+  min-height: 240px;
+  background-image: url("../images/commonwealth.jpg");
+  padding-top: 75px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+}
+
+.banner h1 {
+  font-size: 55px;
+  text-shadow: 2px 2px #000000;
+}
+
+.top-caption {
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.info {
+  padding-left: 50px;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.bottom-info {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.bottom-info h4 {
+  text-align: center;
+}
+
+.sponsor-logos {
+  text-align: center;
+}
+.sponsor-logos img{
+  border-style: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
